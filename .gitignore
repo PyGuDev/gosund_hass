@@ -1,0 +1,8 @@
+.secrets/
+emulator_screen.png
+__pycache__/
+.scratch/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/

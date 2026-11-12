@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gosund EP8",
+        "description": "Connect to your EP8 over the local network (Tuya LAN 3.3).",
+        "data": {
+          "host": "Host",
+          "device_id": "Device ID",
+          "local_key": "Local Key",
+          "poll_interval": "Polling interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not query the Relay. Check host, Device ID, Local Key, and that the EP8 is on the LAN.",
+      "invalid_host": "Host is required",
+      "invalid_device_id": "Device ID is required",
+      "invalid_local_key": "Local Key must be the 16-byte Tuya key"
+    },
+    "abort": {
+      "already_configured": "This EP8 is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gosund EP8 options",
+        "description": "Update connection settings. A successful Relay query is required.",
+        "data": {
+          "host": "Host",
+          "device_id": "Device ID",
+          "local_key": "Local Key",
+          "poll_interval": "Polling interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not query the Relay with the new settings.",
+      "invalid_host": "Host is required",
+      "invalid_device_id": "Device ID is required",
+      "invalid_local_key": "Local Key must be the 16-byte Tuya key"
+    }
+  }
+}

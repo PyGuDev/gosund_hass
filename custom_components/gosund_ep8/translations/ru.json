@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gosund EP8",
+        "description": "Подключение к EP8 по локальной сети (Tuya LAN 3.3).",
+        "data": {
+          "host": "Хост",
+          "device_id": "ID устройства",
+          "local_key": "Local Key",
+          "poll_interval": "Интервал опроса (секунды)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось опросить Relay. Проверьте хост, ID устройства, Local Key и доступность EP8 в LAN.",
+      "invalid_host": "Укажите хост",
+      "invalid_device_id": "Укажите ID устройства",
+      "invalid_local_key": "Local Key должен быть 16-байтовым ключом Tuya"
+    },
+    "abort": {
+      "already_configured": "Эта EP8 уже настроена"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Параметры Gosund EP8",
+        "description": "Обновите параметры подключения. Требуется успешный опрос Relay.",
+        "data": {
+          "host": "Хост",
+          "device_id": "ID устройства",
+          "local_key": "Local Key",
+          "poll_interval": "Интервал опроса (секунды)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось опросить Relay с новыми параметрами.",
+      "invalid_host": "Укажите хост",
+      "invalid_device_id": "Укажите ID устройства",
+      "invalid_local_key": "Local Key должен быть 16-байтовым ключом Tuya"
+    }
+  }
+}
